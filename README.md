@@ -1,6 +1,6 @@
-# LAB - 2
+# LAB - 2/3
 
-## Lab2
+## Lab2/Lab3
 
 You will be guided through a series of questions and games, have FUN!
 
