@@ -22,7 +22,7 @@ let userName = prompt("Welcome to my page! Identify yourself!")
 alert(`Welcome ${userName}, I amglad you are here!`)
 
 const favNumber = 21;
-let i = 0;
+let i = 1;
 
 while (i < 4) {
   i++;
@@ -40,7 +40,7 @@ while (i < 4) {
   } else if (guess < favNumber) {
     alert("Too low. Try again.");
   } else if (guess > favNumber) {
-    if (i === 4) {
+    if (i > 4) {
       alert("That is it for you buddy, the number was 23");
     } else {
       alert("Too high, try again.");

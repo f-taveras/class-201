@@ -7,11 +7,14 @@
 }
 body {
   font-family: Arial, sans-serif;
+  margin: 0;
 }
 
 img{
+
     width: 300px;
-    height: 300px;
+    height: 188px;
+    padding: 0.7em;
 }
 
 main{
