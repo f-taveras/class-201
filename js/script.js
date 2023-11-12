@@ -1,4 +1,45 @@
 
+alert(`Answer yes or no`)
+let response = prompt("Do you enjoy CodeFellows?");
+if (response.toLowerCase().trim() === "yes") {
+  // console.log("Correct!");  
+  alert("Correct!");
+} else {
+    alert("Incorrect. The correct answer is: yes");
+}
+
+response = prompt("Do you find education interesting?");
+if (response.toLowerCase().trim() === "yes") {
+  // console.log("Correct!");    
+  alert("Correct!");
+
+} else {
+    alert("Incorrect. The correct answer is: yes");
+}
+
+response = prompt("Am I done with this project?");
+if (response.toLowerCase().trim() === "yes") {
+  // console.log("Correct!");  
+    alert("Correct!");
+} else {
+    alert("Incorrect. The correct answer is: yes");
+}
+
+response = prompt("Have you gotten any worng answre?");
+if (response.toLowerCase().trim() === "yes") {
+  // console.log("Correct!");  
+    alert("Correct!");
+} else {
+    alert("Incorrect. The correct answer is: yes");
+}
+
+response = prompt("Are you sure?");
+if (response.toLowerCase().trim() === "yes") {
+  // console.log("Correct!");  
+    alert("Correct!");
+} else {
+    alert("Incorrect. The correct answer is: yes");
+}
 
  let userName = prompt("Welcome to my page! Identify yourself!")
  alert(`Welcome ${userName}, I am glad you are here!`)

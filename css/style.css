@@ -3,6 +3,7 @@ html, body {
   height: 100%;
   position: relative;
 }
+
 h1 {
   font-size: 36px;
 }
@@ -49,6 +50,7 @@ h2{
     margin: 12px;
     border-radius: 12px;
     box-shadow: 0 0 14px #868e96;
+    height: 150px;
 }
 
 .list ul,p{
