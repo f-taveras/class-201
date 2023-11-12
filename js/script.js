@@ -1,71 +1,53 @@
-
 `use strict`
 
-alert(`Answer yes or no`)
-let response = prompt("Do you enjoy CodeFellows?");
-if (response.toLowerCase().trim() === "yes") {
-  // console.log("Correct!");  
-  alert("Correct!");
-} else {
-    alert("Incorrect. The correct answer is: yes");
+function normalizeResponse(response) {
+  return response.toLowerCase().trim();
 }
 
-response = prompt("Do you find education interesting?");
-if (response.toLowerCase().trim() === "yes") {
-  // console.log("Correct!");    
-  alert("Correct!");
+function askQuestion(question, expectedAnswer) {
+  var userResponse = prompt(question);
+  var normalizedResponse = normalizeResponse(userResponse);
 
-} else {
-    alert("Incorrect. The correct answer is: yes");
-}
-
-response = prompt("Am I done with this project?");
-if (response.toLowerCase().trim() === "yes") {
-  // console.log("Correct!");  
+  if (normalizedResponse === expectedAnswer) {
     alert("Correct!");
-} else {
-    alert("Incorrect. The correct answer is: yes");
+  } else {
+    alert("Incorrect. The correct answer is: " + expectedAnswer);
+  }
 }
 
-response = prompt("Have you gotten any worng answre?");
-if (response.toLowerCase().trim() === "yes") {
-  // console.log("Correct!");  
-    alert("Correct!");
-} else {
-    alert("Incorrect. The correct answer is: yes");
-}
 
-response = prompt("Are you sure?");
-if (response.toLowerCase().trim() === "yes") {
-  // console.log("Correct!");  
-    alert("Correct!");
-} else {
-    alert("Incorrect. The correct answer is: yes");
-}
+askQuestion("Do you want to read my page?", "yes");
+askQuestion("Do you like education?", "yes");
+askQuestion("will this be the last time I edit this?", "yes");
+askQuestion("Are you sure?", "yes");
+askQuestion("Do you surrender your most valuable possetion", "yes");
 
- let userName = prompt("Welcome to my page! Identify yourself!")
- alert(`Welcome ${userName}, I am glad you are here!`)
- 
- document.getElementById("userName").textContent = userName.toLocaleUpperCase();
+
+
+
+let userName = prompt("Welcome to my page! Identify yourself!")
+alert(`Welcome ${userName}, I am glad you are here!`)
+
+document.getElementById("userName").textContent = userName.toLocaleUpperCase();
 const favNumber = 21;
 
 let i = 0;
-function numberGuessingGame(){
+function numberGuessingGame() {
 
-let userGuess;
-  
+  let userGuess;
+
   while (i < 4) {
     i++;
 
     let userGuess = prompt("Guess my favorite number!");
-  
+
     if (userGuess === null) {
       alert("You are not supposed to do that!");
       break;
     }
-  
+
     const guess = parseInt(userGuess);
-  
+
     if (isNaN(guess)) {
       alert("Please enter a valid number.");
     } else if (guess < favNumber) {
@@ -81,7 +63,7 @@ let userGuess;
       break;
     }
   }
-  
+
   if (i === 4) {
     alert("You have exceeded the number of tries. The answer was 23.");
   }
@@ -119,15 +101,15 @@ function top10Movies() {
 
   for (var i = 0; i < maxInputs; i++) {
     var userInput = prompt("Enter a movie name (or cancel to stop):");
-    
-    
+
+
     if (userInput === null) {
-      break; 
+      break;
     } else {
       movies.push(userInput);
     }
   }
-  
+
   return movies;
 }
 
@@ -140,6 +122,4 @@ document.getElementById("movie3").textContent = movieList[2];
 document.getElementById("movie4").textContent = movieList[3];
 document.getElementById("movie5").textContent = movieList[4];
 
-  
 
->>>>>>> 3d7dc08e760fd3f50b9f5ef2793bd85c1bac7a5c
