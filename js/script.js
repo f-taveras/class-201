@@ -1,3 +1,4 @@
+`use strict`
 
 alert(`Answer yes or no`)
 let response = prompt("Do you enjoy CodeFellows?");
