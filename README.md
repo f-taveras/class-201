@@ -1,6 +1,6 @@
 # LAB - 2/3
 
-## Lab2/Lab3
+## Lab2/Lab3/Lab05b
 
 You will be guided through a series of questions and games, have FUN!
 
